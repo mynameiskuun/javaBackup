@@ -1,0 +1,20 @@
+package project_1128;
+
+public class StuEx {
+
+	public static void main(String[] args) {
+		
+		Student stu = new Student();
+		stu.name = "홍";
+		int asd[][] = null;
+		
+		Student stu1 = new Student("홍","202201","서울 마포구");
+		// stu1 = 객체의 주소값을 가지고 있음.
+		
+		for(int i=0; i<5; i++) {
+			for(int j=0; j<4; j++) {
+				System.out.println(asd[i][j]);
+			}
+		}
+	}
+}

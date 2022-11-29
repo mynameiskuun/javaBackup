@@ -1,0 +1,11 @@
+package project_1129;
+
+public class RefEx {
+
+	public static void main(String[] args) {
+		int x= 10, y = 20;
+		String str = "연습";
+		String srt1 = "연습";
+		System.out.println(x == y);
+	}
+}

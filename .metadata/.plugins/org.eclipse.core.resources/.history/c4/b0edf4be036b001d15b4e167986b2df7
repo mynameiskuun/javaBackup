@@ -1,0 +1,9 @@
+package project_1123;
+
+import java.util.Scanner;
+
+public class Class1 {
+public static void main(String[] args) {
+	
+}
+}

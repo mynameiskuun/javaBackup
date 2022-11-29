@@ -1,0 +1,10 @@
+package project_1123;
+
+public class Student {
+
+	
+	public static void main(String[] args) {
+		String name = "홍길동";
+	System.out.println(name);	
+	}
+}

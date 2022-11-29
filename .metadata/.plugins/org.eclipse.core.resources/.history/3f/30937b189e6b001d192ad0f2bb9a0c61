@@ -1,0 +1,16 @@
+package project_1124;
+
+public class Car {
+
+		int num;
+		String str;
+		
+		Car(int number) {
+			
+		}
+		Car() {
+			
+		}
+}
+
+//이름이 같아도 다르게 인식하는 이유 = 매개변수의 유무

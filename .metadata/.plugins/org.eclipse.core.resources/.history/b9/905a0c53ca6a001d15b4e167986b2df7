@@ -1,0 +1,17 @@
+package project_1123;
+
+public class Student {
+	String name = "홍길동";
+	void print() {
+		System.out.println("test");
+	}
+}
+public static int asd() {
+	int ss = 2;
+	return ss;
+	
+};
+		
+	
+
+//메소드는 기능을 실행시키는것이 목적

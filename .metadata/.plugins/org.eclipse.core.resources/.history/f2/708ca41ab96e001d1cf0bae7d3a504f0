@@ -1,0 +1,12 @@
+package project_1128;
+
+public class stuArrEx {
+	
+	public static void main(String[] args) {
+		
+		Student stuArr[] = new Student[3];
+		System.out.println(stuArr[2]);
+		
+	}
+
+}

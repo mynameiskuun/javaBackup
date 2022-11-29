@@ -1,0 +1,18 @@
+package project_1124;
+
+import java.util.Scanner;
+public class mak {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		 System.out.println("첫번째 정수입력: ");
+	        int i = scanner.nextInt();
+	        System.out.println(i);
+	        
+	        System.out.println("첫번째 문자열입력: ");
+	        String str1 = scanner.nextLine();
+	        System.out.println(str1);
+	}
+	
+}

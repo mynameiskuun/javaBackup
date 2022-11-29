@@ -1,0 +1,12 @@
+package project_1123;
+
+public class BreakTest {
+
+	public static void main(String[] args) {
+	
+		
+		int a = ((Math.random()*6)+1);
+		
+	}
+
+}

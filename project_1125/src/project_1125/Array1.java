@@ -1,0 +1,13 @@
+package project_1125;
+
+public class Array1 {
+
+	
+	
+	public static void main(String[] args) {
+	
+			
+
+	}
+
+}

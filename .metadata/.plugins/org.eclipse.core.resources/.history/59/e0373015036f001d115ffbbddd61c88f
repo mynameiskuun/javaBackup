@@ -1,0 +1,23 @@
+package project_1128;
+
+import java.io.PrintWriter;
+
+public class StudentEx {
+
+	public static void main(String[] args) {
+		
+		PrintWriter p1 = new PrintWriter("readme1.txt");
+		
+		Students st = new Students();
+		st.stuArr = new Student[10];
+		st.init();
+		System.out.println(st.searchStudent("03"));
+		st.updateScore("03",100,100,100);
+		System.out.println(st.searchStudent("03"));
+		
+		Student s1 = st.searchStudent("02");
+		System.out.println(s1);
+		// 이 경우엔 sysout으로 학생을 출력하는것이 가능. 단순히 상태를 변화시키는 void 메소드가 아닌, return 을 통해서 빠져나온 결과값이 있기 때문.
+	}
+
+}

@@ -1,0 +1,16 @@
+package project_1129;
+
+public class RefEx {
+
+	public static void main(String[] args) {
+		int x= 10, y = 20;
+		String str = "연습";
+		String str1 = "연습";
+		System.out.println(x == y);
+		System.out.println(str == str1);
+		// equals() 를 쓰는 이유, 메모리를 비교한다
+		
+		int[] intArray = null;
+		intArray[0] = 10;
+	}
+}

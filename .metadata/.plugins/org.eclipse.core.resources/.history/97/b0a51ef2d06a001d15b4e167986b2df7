@@ -1,0 +1,47 @@
+package chap01;
+
+import java.util.Scanner;
+
+
+
+public class TEST3 {
+
+	public static void main(String[] args) {
+		boolean run = true;
+		
+		Scanner scanner=new Scanner(System.in);
+		Bank Shinhan = new Bank();
+		while(run) {
+			System.out.println("-----------------------------");
+			System.out.println("1.예금 | 2.출금 | 3.잔고 | 4.종료");
+			System.out.println("-----------------------------");
+			System.out.print("선택> ");
+			
+			int inputInt =scanner.nextInt();
+			switch (inputInt) {
+			case 1:
+				
+				System.out.println("얼마를 예금 하시겠습니까> ");
+				Shinhan.balance += scanner.nextInt();
+				break;
+			case 2:
+				System.out.println("얼마를 출금 하시겠습니까> ");
+				Shinhan.balance -= scanner.nextInt();				
+				break;
+			case 3:
+				System.out.println(Shinhan.balance);
+				break;
+			case 4:
+				System.out.println();
+				run = false;
+				break;
+				
+			default :System.out.println("1,2,3,4 중 하나를 입력해 주세요");
+			break;
+			}
+			
+		}
+System.out.println("프로그램 종료");
+	}
+
+}

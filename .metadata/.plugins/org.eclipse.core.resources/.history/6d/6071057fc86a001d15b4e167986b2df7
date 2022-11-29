@@ -1,0 +1,12 @@
+package project_1123;
+
+public class Student {
+	String name = "홍길동";
+
+	
+		void pring() {
+			System.out.println("test");
+		}
+}
+
+//메소드는 기능을 실행시키는것이 목적

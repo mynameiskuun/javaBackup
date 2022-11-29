@@ -1,0 +1,27 @@
+package project_1124;
+
+class test{
+	
+	private int asd = 3;
+	
+	void setNum(int number) {
+		asd = number;
+	}
+	void printStr() {
+		System.out.println(asd);
+	}
+}
+public class prac003 {
+
+	public static void main(String[] args) {
+		new test();
+		test s1 = new test();
+		s1.setNum(3);
+		s1.printStr();
+	
+		
+		
+	}
+}
+
+// 접근제한자 public, private 등 총 4개

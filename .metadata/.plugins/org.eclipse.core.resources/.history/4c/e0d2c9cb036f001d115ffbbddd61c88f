@@ -1,0 +1,11 @@
+package project_1128;
+
+public class sumMethod1 {
+
+	public sumMethod1() {
+		for(int i=1; i<=10; i++) {
+			System.out.println(i);
+	}
+
+	}
+}

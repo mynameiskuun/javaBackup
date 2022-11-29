@@ -1,0 +1,16 @@
+package project_1124;
+
+
+public class prac004 {
+
+	
+	public static void main(String[] args) {
+	
+		Car car;
+		String str = new String("연습");
+		int num;
+		
+
+	}
+
+}

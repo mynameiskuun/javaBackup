@@ -1,0 +1,19 @@
+package project_1123;
+
+public class DoWhile {
+
+	public static void main(String[] args) {
+
+		do {
+			int a = 0;
+			int sum = 0;
+			sum += a;
+			a++;
+			System.out.println(sum);
+			
+			
+		}
+		while (a=10);
+	}
+
+}

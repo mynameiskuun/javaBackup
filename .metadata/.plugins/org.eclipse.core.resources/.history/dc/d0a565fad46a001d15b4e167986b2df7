@@ -1,0 +1,15 @@
+package project_1123;
+
+public class googoodan {
+
+	public static void main(String[] args) {
+		
+		System.out.println("*** 2단 ***");
+		
+		for(int a=1; a<=5; a++) {
+			System.out.println(2 +" x " + a + "=" + 2*a  );
+		}
+
+	}
+
+}

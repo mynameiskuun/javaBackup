@@ -1,0 +1,10 @@
+package project_1125;
+
+public class ifm {
+
+	int number;
+	String name;
+	
+	
+}
+

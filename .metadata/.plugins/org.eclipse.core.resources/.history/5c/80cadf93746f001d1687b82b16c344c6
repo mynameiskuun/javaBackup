@@ -1,0 +1,83 @@
+package project_1125;
+
+import java.util.Scanner;
+
+public class asd {
+
+	public static void main(String[] args) {
+
+		Scanner s1 = new Scanner(System.in);
+		int userNum = 0;
+		String userName[] = null;
+		int price[] = null;
+		boolean run = true;
+		boolean check = true;
+		int income[] = null;
+		int sum = 0;
+		ifm[] stu;
+
+		while (run) {
+			System.out.println("-----------------------------------------");
+			System.out.println("1. 인원수 입력 2. 금액 입력 3. 금액 출력 4. 연수입");
+			System.out.println("5. 랜덤게임  6. ??? 7. 이름 출력 8. 종료");
+			System.out.println("-----------------------------------------");
+			System.out.print("선택>");
+			int indexNum = s1.nextInt();
+
+			if (indexNum == 1) {
+				System.out.println("인원수를 입력해주세요>");
+				userNum = s1.nextInt();
+				qwe a1 = new qwe(userNum);
+				price = new int[userNum];
+				userName = new String[userNum];
+				income = new int[userNum];
+				stu = new ifm[userNum];
+
+				for (int k = 0; k < userNum; k++) {
+					System.out.println("이름을 입력 해 주세요");
+					userName[k] = s1.next();
+				}
+			} else if (indexNum == 2) {
+				System.out.println("먹은 메뉴의 가격을 입력해 주세요");
+				for (int i = 0; i < userNum; i++) {
+					price[i] = s1.nextInt();
+					sum = sum + price[i];
+				}
+				System.out.println(sum);
+			} else if (indexNum == 3) {
+				for (int i = 0; i < userNum; i++) {
+					System.out.println(price[i]);
+				}
+			} else if (indexNum == 4) {
+				for (int w = 0; w < userNum; w++) {
+				
+				}
+			} else if (indexNum == 5) {
+				check = true;
+				while (check) {
+					System.out.println("choose 1~4");
+					int i = (int) (Math.random() * 4 + 1);
+					int sc;
+					sc = s1.nextInt();
+					if (i == sc) {
+						System.out.println("u win!");
+						check = false;
+						break;
+					} else {
+						System.out.println("try again");
+						sc = s1.nextInt();
+					}
+				}
+			} else if (indexNum == 6) {
+
+			} else if (indexNum == 7) {
+
+			} else if (indexNum == 8) {
+				run = false;
+			}
+
+		}
+
+	}
+
+}

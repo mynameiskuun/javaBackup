@@ -1,0 +1,31 @@
+package project_1128;
+
+public class sumMethod1 {
+
+	int exportMethod() {
+		for (int i = 1; i <= 10; i++) {
+			System.out.println(i);
+		}
+		return 0;
+	}
+
+	int sumMethod() {
+		int sum = 0;
+		for (int i = 1; i <= 10; i++) {
+			sum += i;
+		}
+		return sum;
+	}
+	
+	int nSumMethod(int a) {
+		int sum = 0;
+		for(int i=1; i<=a; i++) {
+			sum += i;
+		}
+		return sum;
+	}
+	
+	int divMethod(int a, int b) {
+		int result = (int)a / b;
+	}
+}

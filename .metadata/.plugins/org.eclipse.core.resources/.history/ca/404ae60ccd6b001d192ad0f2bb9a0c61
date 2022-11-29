@@ -1,0 +1,28 @@
+package project_1124;
+
+import java.util.Scanner;
+
+public class Array2 {
+
+	
+	public static void main(String[] args) {
+	// 식당이름 1번식당 2번식당 3번식당
+	// A : 	  5점    3점    2점
+	// B :    4점    2점    1번   점수
+		
+		
+	// 식당이름   1번식당 	  2번식당 	 3번식당
+	// A :    아주좋습니다   별로입니다    보통입니다
+	// B :    별로입니다	  보통입니다	 아주 좋습니다
+
+	// 보기 모드
+
+		Scanner s1 = new Scanner(System.in);
+		
+		int scores[] = null;
+		String review[] = null;
+		
+		
+	}
+
+}

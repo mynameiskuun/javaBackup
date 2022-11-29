@@ -1,0 +1,22 @@
+package project_1123;
+
+public class asd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+		String[] asd = {"문자" , "문자222" , "문자333" , "문자444444" };
+		int max = asd[0].length();
+		
+		for(int i=0; i<asd.length; i++) {
+			if(max < asd[i].length()) {
+				max = asd[i];
+			}
+		}
+		int LengthOfArray = asd[1].length();
+		System.out.println(LengthOfArray);
+	}
+
+}

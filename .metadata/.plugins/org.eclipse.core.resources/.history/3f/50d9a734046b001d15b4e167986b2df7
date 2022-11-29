@@ -1,0 +1,23 @@
+package project_1123;
+
+import java.util.Scanner;
+
+public class Class1 {
+	public static void main(String[] args) {
+
+			boolean run = true;
+			int studentNum = 0;
+			int[] scores = null;
+			Scanner s1 = new Scanner(System.in);
+			
+			while(run) {
+				System.out.println("---------------------------------------------------");
+				System.out.println("1. 학생수 | 2. 점수입력 | 3. 점수리스트 | 4. 분석 | 5. 종료");
+				System.out.println("---------------------------------------------------");
+				System.out.println("선택> ");
+				
+				int selectNo = s1.nextInt();
+				
+			}
+	}
+}

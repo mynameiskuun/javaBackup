@@ -1,0 +1,11 @@
+package project_1123;
+
+public class prac2 {
+
+	public static void main(String[] args) {
+		
+		prac1 s1 = new prac1();
+		s1.Balance;
+	}
+
+}

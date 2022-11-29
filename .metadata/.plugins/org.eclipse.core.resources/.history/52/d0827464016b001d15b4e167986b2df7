@@ -1,0 +1,7 @@
+package project_1123;
+
+public class MAINTEST1 {
+	boolean run = true;
+	int studentNum = 0;
+	int[] scores = null;	
+}

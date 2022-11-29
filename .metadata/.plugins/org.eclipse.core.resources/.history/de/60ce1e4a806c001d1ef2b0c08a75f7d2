@@ -1,0 +1,11 @@
+package project_1125;
+
+public class stu[int a] {
+
+	int scores[][] = null;
+	int num;
+	int num2;
+	boolean run = true;
+	
+	
+}

@@ -1,0 +1,13 @@
+package project_1125;
+
+public class StudentMain {
+
+	public static void main(String[] args) {
+	
+		Student kim = new Student("김익명","07학번","서울");
+		
+		System.out.println(kim.name);
+
+	}
+
+}

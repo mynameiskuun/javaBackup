@@ -1,0 +1,102 @@
+package project_1128;
+
+import java.util.Scanner;
+
+public class prj002 {
+
+	public static void main(String[] args) {
+
+		Scanner scan = new Scanner(System.in);
+		int userWin = 0;
+		int comWin = 0;
+		boolean run = true;
+
+		while (run) {
+			System.out.println("-----------------------------------------");
+			System.out.println("1. 베스킨라빈스 2. 점수확인 3. 종료 4. ???");
+			System.out.println("-----------------------------------------");
+			System.out.print("선택>");
+
+			int indexNum = scan.nextInt();
+			if (indexNum == 1) {
+				System.out.println();
+				System.out.println("게임시작");
+
+				int lastNum = 0;
+
+				while (true) {
+					int userNum = 1;
+					while (true) {
+						System.out.print("1~3 사이의 번호를 입력 해 주세요");
+						userNum = scan.nextInt();
+
+						if (1 <= userNum && userNum <= 3)
+							break;
+						else {
+							System.out.println("1~3사이의 숫자를 입력하세요");
+						}
+					}
+					for (int i = (lastNum + 1); i <= lastNum + userNum; i++) {
+
+						if (i > 31) {
+							break;
+						}
+						System.out.println(i + " " + "!");
+					}
+
+					lastNum += userNum;
+
+					if (lastNum >= 31) {
+						System.out.println("컴퓨터 승리!");
+						comWin++;
+						break;
+					}
+
+					System.out.println();
+
+					System.out.println("컴퓨터 턴!");
+
+					int comNum = 0;
+
+					if (lastNum == 27)
+						comNum = 3;
+					else if (lastNum == 28)
+						comNum = 2;
+					else if (lastNum == 29)
+						comNum = 1;
+					else
+						comNum = (int)((Math.random() * 3)+1);
+
+					for (int i = (lastNum + 1); i <= lastNum + comNum; i++) {
+						if (i > 31) {
+							break;
+						}
+						System.out.println(i + " " + "!");
+					}
+					lastNum += comNum;
+					if (lastNum >= 31) {
+						System.out.println("승리하셨습니다!");
+						userWin++;
+						break;
+					}
+					System.out.println();
+				}
+
+			} else if (indexNum == 2) {
+				System.out.println("-------점수확인------");
+				System.out.println("나의 승리: " + userWin);
+				System.out.println("컴퓨터 승리: " + comWin);
+				if (userWin == 0 && comWin == 0)
+					System.out.println("게임 1회이상 실행 후 확인 가능합니다!");
+				System.out.println();
+			} else if (indexNum == 3) {
+				System.out.println("플레이 해주셔서 감사합니다");
+				run = false;
+			} else if (indexNum == 4) {
+			} else {
+				System.out.println("번호를 다시 입력해주세요");
+			}
+		}
+	}
+
+}

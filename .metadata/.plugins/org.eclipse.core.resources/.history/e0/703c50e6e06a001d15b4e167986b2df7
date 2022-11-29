@@ -1,0 +1,17 @@
+package project_1123;
+
+public class googoodan {
+
+	public static void main(String[] args) {
+		
+		System.out.println("*** 2단 ***");
+		for(int b=1; b<=9; b++) {
+			System.out.println("");
+		for(int a=2; a<=9; a++) {
+			System.out.print(" " + b +" x " + a + " = " + b*a  );
+		}
+		}
+
+	}
+
+}

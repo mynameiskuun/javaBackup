@@ -1,0 +1,25 @@
+package project_1125;
+
+import java.util.Scanner;
+
+public class ArrayEx {
+
+	public static void main(String[] args) {
+
+		Scanner s1 = new Scanner(System.in);
+		int scores[][] = null;
+		int i;
+		int j;
+		boolean run = true;
+		
+		while(run) {
+			
+		}
+		
+		for(i=0; i<ex.length; i++) {
+			for(j=0;)
+		}
+		
+	}
+
+}

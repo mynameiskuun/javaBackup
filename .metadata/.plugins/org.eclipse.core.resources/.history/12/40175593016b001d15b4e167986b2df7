@@ -1,0 +1,59 @@
+
+package project_1123;
+
+import java.util.Scanner;
+
+public class MAINTEST {
+
+	
+	
+	public static void main(String[] args) {
+		
+	
+		
+		Scanner scanner = new Scanner(System.in);
+		MAINTEST1 s1 = new MAINTEST1();
+		while (s1.run) {
+			System.out.println("-----------------------------------------------");
+			System.out.println("1.학생수 | 2.점수입력 | 3.점수리스트 | 4.분석 | 5.종료");
+			System.out.println("-----------------------------------------------");
+			System.out.print("선택> ");
+
+			int selectNo = scanner.nextInt();
+	
+			if (selectNo == 1) {
+				
+				System.out.print("학생수> ");
+				s1.studentNum += scanner.nextInt();
+				s1.scores = new int[s1.studentNum];
+			} else if (selectNo == 2) {
+				for(int i=0; i<s1.studentNum; i++) {
+				s1.scores[i] = scanner.nextInt();
+				}
+			} else if (selectNo == 3) {
+				for(int i=0; i<s1.studentNum; i++) {
+					System.out.println("scores["+i+"]:"+s1.scores[i]);
+				}
+			} else if (selectNo == 4) {
+				
+				s1.sum = 0;
+				for(int j=0; j<s1.studentNum; j++) {
+					s1.sum += s1.scores[j];
+				}
+				s1.avg = s1.sum / s1.studentNum;
+				
+				s1.max = s1.scores[0];
+				for(int k=0; k<s1.studentNum; k++) {
+					if(s1.max < s1.scores[k]) {
+						s1.max = s1.scores[k];
+					}
+				}
+				System.out.println("최고 점수: " + s1.max);
+				System.out.println("평균 점수: " + s1.avg);
+			} else if (selectNo == 5) {
+				run = false;
+			}
+		}
+		System.out.println("프로그램 종료");
+	}
+}

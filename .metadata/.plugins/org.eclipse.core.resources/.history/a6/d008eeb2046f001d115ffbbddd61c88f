@@ -1,0 +1,17 @@
+package project_1128;
+
+public class sumMethod1 {
+
+	void exportMethod() {
+		for (int i = 1; i <= 10; i++) {
+			System.out.println(i);
+		}
+	}
+
+	void sumMethod() {
+		int sum = 0;
+		for (int i = 1; i <= 10; i++) {
+			sum += i;
+		}
+	}
+}

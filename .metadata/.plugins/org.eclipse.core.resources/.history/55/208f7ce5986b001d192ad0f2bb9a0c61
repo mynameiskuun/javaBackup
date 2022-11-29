@@ -1,0 +1,15 @@
+package project_1124;
+
+class test{
+	int asd = 3;
+}
+public class prac003 {
+
+	public static void main(String[] args) {
+		new test();
+		test s1 = new test();
+		s1.asd = 4;
+		System.out.println(s1.asd);
+		
+	}
+}

@@ -1,0 +1,95 @@
+package chap01;
+
+import java.util.Scanner;
+
+public class TEST2 {
+	
+	public static int withdraw() {
+	boolean run = true;
+		
+		int balance = 10000;
+		
+		Scanner scanner=new Scanner(System.in);
+		while(run) {
+			System.out.println("-----------------------------");
+			System.out.println("1.예금 | 2.출금 | 3.잔고 | 4.종료");
+			System.out.println("-----------------------------");
+			System.out.print("선택> ");
+			
+			int inputInt =scanner.nextInt();
+			
+			
+			if (inputInt ==1) {
+				System.out.println("잔고> " + balance);
+			} else if (inputInt ==2) {
+				System.out.println("얼마를 출금하시겠습니까");
+				System.out.println("출금>" + 0
+						);
+			} else if (inputInt ==3) {
+				System.out.println("잔고> " + balance);
+			} else if (inputInt ==4)  {
+				run =false;
+			}
+		
+		
+		
+	};
+	public static void main(String[] args) {
+		boolean run = true;
+		
+		int balance = 10000;
+		
+		Scanner scanner=new Scanner(System.in);
+		
+//		while(run) {
+//			System.out.println("-----------------------------");
+//			System.out.println("1.예금 | 2.출금 | 3.잔고 | 4.종료");
+//			System.out.println("-----------------------------");
+//			System.out.print("선택> ");
+//			
+//			int inputInt =scanner.nextInt();
+//			
+//			
+//			if (inputInt ==1) {
+//				System.out.println("잔고> " + balance);
+//			} else if (inputInt ==2) {
+//				System.out.println("얼마를 출금하시겠습니까");
+////				int inputWithdraw =scanner.nextInt();
+//				System.out.println("출금>" + 0
+//						);
+//			} else if (inputInt ==3) {
+//				System.out.println("잔고> " + balance);
+//			} else if (inputInt ==4)  {
+//				run =false;
+//			}
+		
+			
+			
+			
+			
+//			int withdraw = 0;
+//			switch (inputInt) {
+//			case 1:
+//				System.out.println("예금액> " + balance);
+//				break;
+//			case 2:
+//				int inputWithdraw = withdraw + scanner.nextInt();
+//				System.out.println("출금액> " + inputWithdraw);
+//				break;
+//			case 3:
+//				int changedBalance = balance - inputWithdraw ;
+//				System.out.println("잔고> " + changedBalance);
+//				break;
+//			case 4:
+//				System.out.println();
+//				run = false;
+//				break;
+//			default:
+//				break;
+//			}
+			
+		}
+System.out.println("프로그램 종료");
+	}
+
+}

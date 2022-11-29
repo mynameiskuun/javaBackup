@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;project_1129.prj001&apos; to &apos;RefEx&apos;&#x0D;&#x0A;- Original project: &apos;project_1129&apos;&#x0D;&#x0A;- Original element: &apos;project_1129.prj001&apos;&#x0D;&#x0A;- Renamed element: &apos;project_1129.RefEx&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;prj001&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;project_1129{prj001.java[prj001" matchStrategy="1" name="RefEx" qualified="false" references="true" similarDeclarations="false" stamp="1669682201236" textual="false" version="1.0"/>
+</session>

@@ -1,0 +1,13 @@
+package project_1124;
+
+public class Array {
+
+	public static void main(String[] args) {
+	
+		int[][] scores = { {95,80} , {92,96} };
+		
+		System.out.println(scores[1][1]);
+
+	}
+
+}

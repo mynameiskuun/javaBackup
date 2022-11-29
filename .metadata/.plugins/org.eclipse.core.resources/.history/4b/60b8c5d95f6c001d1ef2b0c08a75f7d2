@@ -1,0 +1,29 @@
+package project_1125;
+
+import java.util.Scanner;
+
+public class ArrayEx {
+
+	public static void main(String[] args) {
+
+		Scanner s1 = new Scanner(System.in);
+		int scores[][] = null;
+		int num;
+		int num2;
+		boolean run = true;
+		
+		while(run) {
+			System.out.println();
+			int studentNum = s1.nextInt();
+			//학생입력
+			System.out.println();
+			//과목입력
+			int courseNum = s1.nextInt();
+			scores= new int[num][num2];
+		}
+		
+
+		
+	}
+
+}

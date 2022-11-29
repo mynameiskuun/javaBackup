@@ -1,0 +1,22 @@
+package project_1128;
+
+public class stuArrEx {
+	static Student[] stuArr;
+	public static void main(String[] args) {
+		
+		stuArr = new Student[3];
+//		Student stuArr[] = new Student[3];
+//		stuArr[0] = new Student();
+//		stuArr[0].name = "홍";
+//		System.out.println(stuArr[0].name);
+//		insertStudent("홍","01","마포구",12,12,12);
+//		System.out.println(stuArr[0]);
+		
+		for(int i=0; i<stuArr.length; i++) {
+			insertStudent("홍","01","마포구",12,12,12);
+		}
+	}
+	static void insertStudent(String name, String address, String hakbun, int kor, int eng, int math) {
+		stuArr[0] = new Student(name,address,hakbun,kor,eng,math);
+	}
+}

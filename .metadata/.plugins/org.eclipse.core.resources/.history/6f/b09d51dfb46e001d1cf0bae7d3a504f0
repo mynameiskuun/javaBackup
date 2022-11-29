@@ -1,0 +1,32 @@
+package project_1128;
+
+public class Student {
+
+	String name;
+	String hakbun;
+	String address;
+	int kor;
+	int eng;
+	int math;
+	
+	Student() {
+		
+	}
+	
+	Student(int kor, int eng, int math, String name, String hakbun, String address) {
+		this.kor = kor;
+		this.eng = eng;
+		this.math = math;
+		this.name = name;
+		this.hakbun = hakbun;
+		this.address = address;
+		
+		
+	}
+	
+	int sum() {
+		return this.kor+this.eng+this.math;
+		
+	}
+	
+}

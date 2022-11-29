@@ -1,0 +1,43 @@
+package project_1123;
+
+public class asd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+		String[] asd = {"asd" , "a" , "as" , "asdasd" };
+		int max = asd[0].length();
+		int min = asd[0].length();
+		
+		for(int i=0; i<asd.length; i++) {
+			if(max < asd[i].length()) {
+				max = asd[i].length();
+			}
+		}
+		// length값이 가장 큰 element의 length값 구하기 = max=8
+		
+		
+		for(int j=0; j<asd.length; j++) {
+			if(max == asd[j].length()) {
+				System.out.println(j);
+			}
+		}
+		// length값이 가장 긴 max값의 index값 찾기
+		
+		for(int k=0; k<asd.length; i++) {
+			if(min > asd[k].length()) {
+				min = asd[k].length();
+			}
+		}
+		
+		for(int h=0; h<asd.length; j++) {
+			if(min == asd[h].length()) {
+				System.out.println(h);
+			}
+		}
+
+	}
+
+}

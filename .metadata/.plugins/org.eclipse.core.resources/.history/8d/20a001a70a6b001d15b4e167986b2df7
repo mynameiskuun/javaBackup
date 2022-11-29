@@ -1,0 +1,21 @@
+package project_1123;
+
+public class Project {
+
+	public static void main(String[] args) {
+		
+		boolean Run = true;
+		int IndexNum = 0;
+		int[] asd = null;
+		scores = new int[studentNum];
+
+	}
+
+}
+
+
+//{ 가게이름 / 점수 / 리뷰 }
+//{ 가게이름 / 점수 / 리뷰 }
+//{ 가게이름 / 점수 / 리뷰 }
+
+

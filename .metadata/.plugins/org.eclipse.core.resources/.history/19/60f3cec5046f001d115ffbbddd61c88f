@@ -1,0 +1,14 @@
+package project_1128;
+
+public class asd {
+	
+	public static void main(String[] args) {
+		
+		sumMethod1 s1 = new sumMethod1();
+		
+		s1.exportMethod();
+		
+		s1.sumMethod();
+		
+	}
+}

@@ -1,0 +1,119 @@
+package project_1128;
+import java.util.Scanner;
+
+public class asd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		if (sele == 4) {
+			System.out.println();
+			System.out.println("게임시작");
+
+			int lastNum = 0;
+
+			while (true) {
+				int userNum = 1;
+				while (true) {
+					System.out.print("1~3 사이의 번호를 입력 해 주세요");
+					userNum = scan.nextInt();
+
+					if (1 <= userNum && userNum <= 3)
+						break;
+					else {
+						System.out.println("1~3사이의 숫자를 입력하세요");
+					}
+				}
+				for (int i = (lastNum + 1); i <= lastNum + userNum; i++) {
+
+					if (i > 31) {
+						break;
+					}
+					System.out.println(i + " " + "!");
+				}
+
+				lastNum += userNum;
+
+				if (lastNum >= 31) {
+					System.out.println("컴퓨터 승리!");
+					comWin++;
+					break;
+				}
+
+				System.out.println();
+
+				System.out.println("컴퓨터 턴!");
+
+				int comNum = 0;
+				if (lastNum == 1)
+					comNum = 3;
+				else if (lastNum == 4)
+					comNum = 2;
+				else if (lastNum == 5)
+					comNum = 1;
+				else if (lastNum == 7)
+					comNum = 3;
+				else if (lastNum == 8)
+					comNum = 2;
+				else if (lastNum == 9)
+					comNum = 1;
+				else if (lastNum == 11)
+					comNum = 3;
+				else if (lastNum == 12)
+					comNum = 2;
+				else if (lastNum == 13)
+					comNum = 1;
+				else if (lastNum == 14)
+					comNum = 3;
+				else if (lastNum == 16)
+					comNum = 2;
+				else if (lastNum == 17)
+					comNum = 1;
+				else if (lastNum == 19)
+					comNum = 3;
+				else if (lastNum == 20)
+					comNum = 2;
+				else if (lastNum == 21)
+					comNum = 1;
+				else if (lastNum == 23)
+					comNum = 3;
+				else if (lastNum == 24)
+					comNum = 2;
+				else if (lastNum == 25)
+					comNum = 1;
+				else if (lastNum == 27)
+					comNum = 3;
+				else if (lastNum == 28)
+					comNum = 2;
+				else if (lastNum == 29)
+					comNum = 1;
+				else
+					comNum = (int) (Math.random() * 3) + 1;
+
+				for (int i = (lastNum + 1); i <= lastNum + comNum; i++) {
+					if (i > 31) {
+						break;
+					}
+					System.out.println(i + " " + "!");
+					System.out.println();
+				}
+				lastNum += comNum;
+				if (lastNum >= 31) {
+					System.out.println("승리하셨습니다!");
+					userWin++;
+					break;
+				}
+				System.out.println();
+			}
+			if (sele == 5) {
+				System.out.println("-------점수확인------");
+				System.out.println("나의 승리: " + userWin);
+				System.out.println("컴퓨터 승리: " + comWin);
+				if (userWin == 0 && comWin == 0)
+					System.out.println("게임 1회이상 실행 후 확인 가능합니다!");
+				System.out.println();
+			}
+
+		}
+	}
+
+}

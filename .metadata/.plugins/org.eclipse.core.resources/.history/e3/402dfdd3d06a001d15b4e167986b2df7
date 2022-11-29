@@ -1,0 +1,7 @@
+package chap01;
+
+public class Bank {
+
+	int balance = 0;
+	
+}

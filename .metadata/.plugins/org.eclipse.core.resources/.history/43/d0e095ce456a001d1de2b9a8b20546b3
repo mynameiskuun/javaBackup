@@ -1,0 +1,18 @@
+package chap01;
+
+public class prac4 {
+
+	public static void main(String[] args) {
+	boolean run = true;
+		
+		while(run) {
+			int x = (int) ((Math.random()*10) +1);
+			int y = (int) ((Math.random()*10) +1);
+			if((4*x)+(5*y) == 60) {
+				System.out.println("("+x+","+y+")");
+			} 
+		}
+
+	}
+
+}

@@ -1,0 +1,12 @@
+package project_1123;
+
+public class asd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		String[] asd = {"문자" , "문자222" , "문자333" , "문자444444" };
+	}
+
+}

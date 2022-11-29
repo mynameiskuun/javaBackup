@@ -1,0 +1,15 @@
+package project_1124;
+
+public class prac001 {
+
+	public static void main(String[] args) {
+		
+		for(int i=0; i<1000; i++) {
+	int sum = 0;
+	sum += sum + i;
+	
+		}
+		System.out.println(sum);
+	}
+
+}

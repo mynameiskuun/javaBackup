@@ -1,0 +1,16 @@
+package project_1125;
+
+public class Student {
+	String name;
+	String address;
+	String hakbun;
+	int kor;
+	int math;
+	int eng;
+	
+	
+	
+	Student(int a){
+		this.math = a;
+	}
+}

@@ -1,0 +1,32 @@
+package project_1123;
+
+public class asd {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		
+		String[] asd = {"ㄴㄴㄴㄴㅁㄴㅇㄴㄹㄴㅇㄹㄴㅇㄹㄴㅇㄹㄴㅇㄹㅁㄴㅇ" , "ㅁㄴㅇ222" , "ㅁㄴㅇ" , "문자12412ㅁㄴㅁ" };
+		int max = asd[0].length();
+		
+		for(int i=0; i<asd.length; i++) {
+			if(max < asd[i].length()) {
+				max = asd[i].length();
+			}
+		}
+		// length값이 가장 큰 element의 length값 구하기 = max=8
+		
+		System.out.println(max);
+		for(int j=0; j<asd.length; j++) {
+			if(max == asd[j].length()) {
+				System.out.println(j);
+			}
+		}
+		// length값이 가장 긴 max값의 index값 찾기
+		
+		
+
+	}
+
+}

@@ -1,0 +1,33 @@
+package project_1124;
+
+public class Calculator {
+
+	void powerOn() {
+		System.out.println("전원을 켭니다.");
+	}
+
+	int plus(int x, int y) {
+		int result = x + y;
+		return result;
+	}
+
+	double divide(int x, int y) {
+		double result = (double) x / (double) y;
+		return result;
+	}
+
+	void powerOff() {
+		System.out.println("전원을 끕니다.");
+	}
+	public static void main(String[] args) {
+		Calculator c1 = new Calculator();
+		c1.powerOn();
+		int asd = c1.plus(3,10);
+		// 처음에 c1.plus(3,10)만 입력해서 unreachable code 오류 발생
+		// c1.plus(3,10)은 결과값을 result라는 변수에 담는 코드.
+		System.out.println(asd);
+		double sdf = c1.divide(20,40);
+		System.out.println(sdf);
+		c1.powerOff();
+	}
+}

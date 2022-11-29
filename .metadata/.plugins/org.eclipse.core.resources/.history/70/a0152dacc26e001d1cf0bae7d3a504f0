@@ -1,0 +1,84 @@
+package project_1128;
+
+import java.util.Scanner;
+
+public class stuArrEx {
+	static Student[] stuArr;
+	public static void main(String[] args) {
+		
+		Scanner s1 = new Scanner(System.in);
+		
+		stuArr = new Student[10];
+//		Student stuArr[] = new Student[3];
+//		stuArr[0] = new Student();
+//		stuArr[0].name = "홍";
+//		System.out.println(stuArr[0].name);
+//		insertStudent("홍","01","마포구",12,12,12);
+//		System.out.println(stuArr[0]);
+		
+		for(int i=0; i<stuArr.length; i++) {
+			insertStudent(i,"홍"+i,"마포구","0"+(i+1),12+i,80+i,72+i);
+	
+		}
+//		for(Student stu : stuArr) {
+//			System.out.println(stu);
+//		}
+		
+//		for(int i=0; i<stuArr.length; i++) {
+//			if(stuArr[i].name.equals(("홍3"))) {
+//				System.out.println(stuArr[i]);
+//				
+//			}
+//		}
+		// for문을 이용한 일종의 검색 기능
+	
+		
+		
+		searchStudent("02");
+		
+		updateKorScore("03",100);
+		
+		updateScore("03",-1,90,-1);
+		
+	}
+	static void updateScore(String hakbun, int kor, int math, int eng) {
+		for(int i=0; i<stuArr.length; i++) {
+			if(stuArr[i].hakbun.equals(hakbun)) {
+		
+				stuArr[i].kor = (kor>0) ? kor : stuArr[i].kor;
+				if(math > 0) {
+					stuArr[i].math = math;
+				}
+				if(eng >= 0) {
+					stuArr[i].eng = eng;	
+				}
+				
+				System.out.println(stuArr[i]);
+			}
+		}
+	}
+	static void updateKorScore(String hakbun, int kor) {
+		for(int i=0; i<stuArr.length; i++) {
+			if(stuArr[i].hakbun.equals(hakbun)) {
+				stuArr[i].kor = kor;
+				System.out.println(stuArr[i]);
+				// parameter hakbun을 받아서 일치하는 Student 검색.
+				// parameter int kor을 받아서 
+				// 그중 일치하는 Student의 kor score를 int kor로 수정.
+			}
+		}
+	}
+	
+	static void insertStudent(int i,String name, String address, String hakbun, int kor, int eng, int math) {
+		stuArr[i] = new Student(name,address,hakbun,kor,eng,math);
+	}	
+
+	static void searchStudent(String hakbun) {
+		for(int i=0; i<stuArr.length; i++) {
+			if(stuArr[i].hakbun.equals(hakbun)) {
+				System.out.println(stuArr[i]);
+			}
+		}
+	}
+}
+

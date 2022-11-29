@@ -1,0 +1,21 @@
+package project_1124;
+
+import java.util.Scanner;
+
+public class googoodan {
+
+	
+	public static void main(String[] args) {
+		Scanner s1 = new Scanner(System.in);
+		
+		System.out.println("몇단?");
+		int num = s1.nextInt();
+		System.out.println("부터 몇단까지?");
+		int num1 = s1.nextInt();
+		for(int i= num; num<num1; ni++) {
+			for(int j=1; j<10; j++) {
+				System.out.println(i + " X " + j + " = " + (i*j));
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+package project_1123;
+
+public class StudentExample {
+
+	public static void main(String[] args) {
+		
+		
+	String name = "홍길동";
+	System.out.println(name);	
+	
+	Student s1 = new Student();
+	System.out.println(s1.name);
+	s1.name = "김익명";
+	System.out.println(s1.name);
+	Student s2 = new Student();
+	System.out.println(s2.name);
+	
+	s1.print();
+	
+	Student s3 = new Student();
+	s3.print();
+//		Student s1 = new Student();
+//		System.out.println("s1 변수가 Student 객체를 참조합니다.");
+//		
+//		Student s2 = new Student();
+//		System.out.println("s2 변수가 또 다른 Student 객체를 참조합니다");
+	}
+}

@@ -1,0 +1,64 @@
+package project_1125;
+
+// 더치페이 프로그램
+import java.util.Scanner;
+
+public class asd {
+
+	public static void main(String[] args) {
+
+		Scanner s1 = new Scanner(System.in);
+		int userNum = 0;
+		String userName[] = null;
+		int price[] = null;
+		boolean run = true;
+		int income[] = null;
+
+		while (run) {
+			System.out.println("-----------------------------------------");
+			System.out.println("1. 인원수 입력 2. 금액 입력 3. 금액 출력 4. 연수입");
+			System.out.println("5.  6. ??? 7. 이름 출력 8. 종료");
+			System.out.println("-----------------------------------------");
+			System.out.print("선택>");
+			int indexNum = s1.nextInt();
+			
+			if (indexNum == 1) {
+				System.out.println("인원수를 입력해주세요>");
+				userNum = s1.nextInt();
+				price = new int[userNum];
+				userName = new String[userNum];
+				for (int k = 0; k < userNum; k++) {
+					System.out.println("이름을 입력 해 주세요");
+					userName[k] = s1.next();
+				}
+			} else if (indexNum == 2) {
+				System.out.println("먹은 메뉴의 가격을 입력해 주세요");
+				for (int i = 0; i < userNum; i++) {
+
+					price[i] = s1.nextInt();
+				}
+
+			} else if (indexNum == 3) {
+				for(int i=0; i<userNum; i++) {
+					System.out.println(price[i]);
+				}
+			} else if (indexNum == 4) {
+				income = s1.nextInt();
+			} else if (indexNum == 5) {
+				
+			} else if (indexNum == 6) {
+				
+			} else if (indexNum == 7) {
+				for(int q = 0; q<userNum; q++) {
+					income = s1.nextInt();
+					System.out.println(userName[q]);
+				}
+			} else if (indexNum == 8) {
+				run = false;
+			}
+			
+		}
+
+	}
+
+}

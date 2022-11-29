@@ -1,0 +1,9 @@
+package project_1123;
+
+public class Student {
+
+	String name = "홍길동";
+	public static void main(String[] args) {
+		
+	}
+}

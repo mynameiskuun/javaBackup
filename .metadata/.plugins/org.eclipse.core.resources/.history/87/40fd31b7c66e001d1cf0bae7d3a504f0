@@ -1,0 +1,14 @@
+package project_1128;
+
+public class StudentxEx {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Students st = new Students();
+		st.init();
+		System.out.println(st.searchStudent("03"));
+		st.updateScore("03",50,90,50);
+		
+	}
+
+}
