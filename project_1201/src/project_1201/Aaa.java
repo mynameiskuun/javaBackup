@@ -22,9 +22,12 @@ public class Aaa {
 		b = 20;
 		System.out.println(b);
 	}
+	
 	public static void main(String[] args) {
 		Aaa.a = 20;
 		Aaa.aaa();
+		//Aaa클래스는 static속성이 없기때문에, 해당 변수 및 메소드에 직접 접근 불가능.
+		
 		
 		Aaa a1 = new Aaa();
 		Aaa a2 = new Aaa();
@@ -34,6 +37,7 @@ public class Aaa {
 		
 		a2.a = 19;
 		System.out.println(a1.a);
+		// Aaa클래스에 static 속성이 빠져있기 때문에,객체 생성 없이 해당 변수에 직접 접근 불가능.
 		
 //		Aaa.aaa();
 //		Aaa.bbb();

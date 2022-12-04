@@ -20,4 +20,10 @@ public class A {
 		void method2() {}
 		private void method3() {}
 		
+		
+		public int C() {
+			
+			this.field3 = 3;
+			return this.field3;
+		}
 }
