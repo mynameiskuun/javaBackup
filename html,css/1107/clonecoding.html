@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout</title>
+    <style>
+      body {
+        font-family: "맑은고딕", 돋움, 굴림;
+        /* 대표서체에는 쌍따옴표 표시 */
+      }
+      #wrapper {
+        width: 800px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      header {
+        width: 100%;
+        height: 150px;
+        background-color: red;
+        background-image: url(1.jpg);
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: /* 50px 50px; */ 25%;
+        /* x축으로 오른쪽, y축으로 center */
+
+        /* 위와같이 background의 image와 color를 동시에 적용시킬 때에는 background에 한번에 쓰는것이 아닌, 각각 따로 써줘야함. repeat도 마찬가지 */
+      }
+      header nav {
+        float: left;
+        width: 70%;
+        margin-top: 50px;
+      }
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        float: left;
+        font-weight: 600; /* 굵은폰트 */
+        margin: 15px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      section {
+        float: left;
+        width: 580px;
+        padding: 5px;
+      }
+      section article {
+        float: left;
+        width: 250px;
+        height: 320px;
+        margin: 5px;
+        padding: 10px;
+        border: 1px solid #ccc;
+      }
+      aside {
+        float: right;
+        width: 200px;
+        height: auto;
+        border: 1px solid darkgreen;
+        text-align: center;
+        margin-top: 98px;
+      }
+      img {
+        width: 90%;
+        height: auto;
+      }
+      footer {
+        clear: both;
+        width: 800px;
+        height: 60px;
+        padding: 40px;
+        box-sizing: border-box;
+        margin-bottom: 0;
+        background: #333;
+        color: white;
+        text-align: center;
+      }
+      address {
+        font-style: normal;
+      }
+      h1 {
+        font-size: 32px;
+      }
+      h2 {
+        font-size: 24px;
+      }
+      p,
+      address {
+        font-size: 12px;
+        line-height: 20px;
+      }
+      .at1,
+      .at2,
+      .at3,
+      .at4 {
+        transition: 0.3s;
+      }
+      .at1:hover {
+        background: yellow;
+        border: 1px solid dodgerblue;
+      }
+      .at2:hover {
+        background: darkgreen;
+        border: 1px solid dodgerblue;
+      }
+      .at3:hover {
+        background: purple;
+        border: 1px solid dodgerblue;
+      }
+      .at4:hover {
+        background: brown;
+        border: 1px solid dodgerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#">애완견 종류</a></li>
+            <li><a href="#">입양하기</a></li>
+            <li><a href="#">건강돌보기</a></li>
+            <li><a href="#">더불어 살기</a></li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <h1>강아지 용품 준비하기</h1>
+        <article class="at1">
+          <h2>강아지 집</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+            nesciunt tempora expedita cupiditate exercitationem magnam
+            doloremque praesentium voluptate nam perspiciatis, ratione
+            dignissimos commodi deleniti perferendis quo totam placeat dolorem
+            minima!
+          </p>
+        </article>
+        <article class="at2">
+          <h2>강아지 먹이</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+            nesciunt tempora expedita cupiditate exercitationem magnam
+            doloremque praesentium voluptate nam perspiciatis, ratione
+            dignissimos commodi deleniti perferendis quo totam placeat dolorem
+            minima!
+          </p>
+        </article>
+        <article class="at3">
+          <h2>밥그릇, 물병</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+            nesciunt tempora expedita cupiditate exercitationem magnam
+            doloremque praesentium voluptate nam perspiciatis, ratione
+            dignissimos commodi deleniti perferendis quo totam placeat dolorem
+            minima!
+          </p>
+        </article>
+        <article class="at4">
+          <h2>이름표, 목줄</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est
+            nesciunt tempora expedita cupiditate exercitationem magnam
+            doloremque praesentium voluptate nam perspiciatis, ratione
+            dignissimos commodi deleniti perferendis quo totam placeat dolorem
+            minima!
+          </p>
+        </article>
+      </section>
+      <aside>
+        <img src="asd.jpg" alt="한소희" />
+        <img src="asd.jpg" alt="한소희" />
+        <img src="asd.jpg" alt="한소희" />
+      </aside>
+      <footer>
+        <address>Copyright 2022 NSK</address>
+      </footer>
+    </div>
+  </body>
+</html>

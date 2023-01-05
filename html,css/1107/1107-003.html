@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hidden</title>
+    <style>
+      ul {
+        float: left;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .prod-list {
+        text-align: center;
+        position: relative;
+      }
+      img {
+        width: 300px;
+        height: 200px;
+      }
+      .prod-list:hover {
+        opacity: 1;
+        transition: 0.3s;
+      }
+
+      h1,
+      p {
+        color: white;
+      }
+      .caption {
+        opacity: 0.5;
+        width: 300px;
+        height: 200px;
+        background: rgba(0, 0, 0, 0.5);
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <ul class="prod-list">
+        <li>
+          <div>
+            <img src="asd.jpg" alt="" />
+            <div class="caption">
+              <h1>상품1</h1>
+              <p>상품 설명</p>
+              <p>가격 : 12,345원</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="asd.jpg" alt="" />
+            <div class="caption">
+              <h1>상품1</h1>
+              <p>상품 설명</p>
+              <p>가격 : 12,345원</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <img src="asd.jpg" alt="" />
+            <div class="caption">
+              <h1>상품1</h1>
+              <p>상품 설명</p>
+              <p>가격 : 12,345원</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

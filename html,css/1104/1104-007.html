@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2DEPTH MENU</title>
+    <style>
+      .cls001 {
+        list-style: none; /* li에 자동으로 생기는 *을 제거함 */
+        margin: 0;
+        padding: 0; /* 이 값을 주지않으면 ul은 자동으로 여백을 갖고 태어나기 때문에, 벽에 붙지 않음 */
+      }
+
+      .cls001 > li {
+        width: 120px;
+        height: 30px;
+        line-height: 30px; /* line-height 값을 height 값과 똑같이 주면, 박스안에서 정 중앙에 위치할수 있게 하는 기능을 하며, 윗 영역을 침범하지 않게 함 */
+        border: 1px solid black;
+        text-align: center;
+        float: left;
+      }
+      /* 위와 다르게 >표시가 필요없는 이유 : 중복되는 다른 값이 없기 때문 */
+      .cls001 li ul {
+        list-style: none; /* li에 자동으로 생기는 *을 제거함 */
+        margin: 0;
+        padding: 0;
+      }
+
+      .cls001 li ul li {
+        width: 120px;
+        height: 30px;
+        line-height: 30px;
+        border: 1px solid black;
+        text-align: center;
+        display: none; /* 처음엔 안보였다가, 해당 버튼에 커서를 대면 나오는 기능을 쓰기위해 */
+        /* display none->block 으로 가는건 transition 사용 불가능 */
+      }
+
+      .cls001 li:hover ul li {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="cls001">
+      <li>
+        HTML
+        <ul>
+          <li>HTML1</li>
+          <li>HTML2</li>
+          <li>HTML3</li>
+        </ul>
+      </li>
+      <li>CSS</li>
+      <li>JAVASCRIPT</li>
+      <li>jQuery</li>
+      <li>Portfolio</li>
+    </ul>
+  </body>
+</html>

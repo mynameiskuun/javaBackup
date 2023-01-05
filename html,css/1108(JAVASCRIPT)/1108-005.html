@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>3항 조건 연산자</title>
+    <script>
+      //   var a = 5;
+      //   var b = 10;
+      //   var result = a > b ? "오늘 가야될까?" : "그냥 집으로 가자";
+      //   document.write(result);
+
+      // var name = prompt("이름이 뭐에요?");
+      // var height = prompt("키가 몇이에요?");
+      // var weight = prompt("몸무게가 몇이에요?");
+
+      // var normal_w = (height - 100) * 0.9;
+      // // 평균체중
+
+      // var result = weight >= normal_w - 5 && weight <= normal_w + 5;
+      // // 오차범위 + - 5 준것
+      // result = result ? "적정체중" : "비적정체중";
+      // document.write(name + "님은" + result + "입니다");
+
+      // var walk = prompt("하루에 걷는 양은 몇 걸음 인가요?");
+
+      // if (walk >= 10000) {
+      //   document.write("많이 걸으시네요");
+      // }
+
+      // var id = "bbkjh";
+      // var pw = "1234";
+
+      // var user_id = prompt("아이디가 뭔가요?");
+      // var user_pw = prompt("암호가 뭔가요?");
+
+      // if (id == user_id) {
+      //   if (pw == user_pw) {
+      //     document.write(user_id + "님 환영합니다");
+      //   } else {
+      //     alert("비밀번호가 일치하지 않습니다");
+      //   }
+      // } else {
+      //   alert("아이디가 일치하지 않습니다");
+      //   location.reload();
+      // }
+      let optionGrade = 3;
+      let option = "";
+
+      switch (optionGrade) {
+        case 1:
+          option += "전동 트렁크, 선루프, HUD, ";
+        case 2:
+          option += "크루즈 컨트롤, 전후방 감지기, 전후방 카메라, ";
+        case 3:
+          option += "열선 및 통풍 시트, 스마트 키, 네비게이션, ";
+        default:
+          option += "에어백, 차선이탈 경보장치, 무선도어 잠금장치";
+      }
+      document.write(option);
+    </script>
+  </head>
+  <body></body>
+</html>

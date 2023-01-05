@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>즐거운 금요일</title>
+
+    <style>
+      body {
+        height: 10000px;
+      }
+
+      .cls001 {
+        width: 150px;
+        height: 150px;
+        border: 2px solid red; /* block tag는 border 적용 가능. 인라인은 적용 불가 */
+        border-radius: 35px 40px 25px 50px;
+        /* border-radius 인자를 width와 height의 50% 만큼 입력했을때, 원이 형성됨. 단위가 아닌 50% 직접 입력해도 적용 가능 */
+        /* border-radius 인자를 4개 입력했을때, top-left부터 시계방향으로 적용됨. */
+      }
+
+      .circle {
+        width: 45px;
+        height: 45px;
+        border: 2px solid dodgerblue;
+        border-radius: 50%;
+        position: fixed; /* absolute : fixed와 놓이는 위치는 같으나 스크롤 했을때 따라오지 않음 */
+        right: 50px; /* 브라우저 기준으로 좌표값을 정함 */
+        bottom: 50px;
+      }
+
+      i {
+        font-size: 40px;
+        color: red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /*
+         top, left 50% 만으로 정가운데에 위치하지 않는 이유 
+         */
+      }
+    </style>
+
+    <script
+      src="https://kit.fontawesome.com/327740aabb.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font awesome 이용해서 딩뱃 폰트 사용. 유료 이미지 사용할경우 출력x-->
+  </head>
+  <body>
+    <h1 class="cls001"><a href="#bbkjh01">반품정책</a></h1>
+    <h1 class="cls001"><a href="#bbkjh02">교환정책</a></h1>
+    <h1 class="cls001"><a href="#bbkjh03">환불정책</a></h1>
+    <h1 class="cls001"><a href="#bbkjh04">회원탈퇴</a></h1>
+    <!-- a 태그 안에 이동시키고 싶은 부분의 id를 작성하면 해당 부분으로 이동함 -->
+
+    <!-- id를 설정할때 #으로 지정함 -->
+
+    <p id="bbkjh01">
+      반품정책 Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+      aliquid soluta placeat consequuntur dolor distinctio vel fuga iusto sed
+      provident vitae cumque possimus nesciunt maxime quis, iste sint velit
+      error.
+    </p>
+    <p id="bbkjh02">
+      교환정책 Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+      aliquid soluta placeat consequuntur dolor distinctio vel fuga iusto sed
+      provident vitae cumque possimus nesciunt maxime quis, iste sint velit
+      error.
+    </p>
+    <p id="bbkjh03">
+      환불정책 Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+      aliquid soluta placeat consequuntur dolor distinctio vel fuga iusto sed
+      provident vitae cumque possimus nesciunt maxime quis, iste sint velit
+      error.
+    </p>
+    <p id="bbkjh04">
+      회원탈퇴 Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+      aliquid soluta placeat consequuntur dolor distinctio vel fuga iusto sed
+      provident vitae cumque possimus nesciunt maxime quis, iste sint velit
+      error.
+    </p>
+
+    <div class="circle">
+      <i class="fa-brands fa-apple"></i>
+    </div>
+
+    <a href="">링크1</a>
+    <a href="">링크2</a>
+  </body>
+</html>
+
+<!-- 
+1. !important 명령어
+2. 인라인 스타일시트
+3. 내부 스타일시트
+4. 외부 스타일시트
+-->
+
+<!-- 
+1. 태그 선택자 (h1, p, ol, li 등등)
+2. id 선택자 -> 딱 한번만 적용시킬 때 id 선택자를 사용함 (#으로 선택)
+3. 클래스 선택자 -> 같은 부분이 여러군데일 때 클래스 선택자를 사용함 (.으로 선택)
+-->
+
+<!-- 
+딩뱃 폰트
+-> 타이핑을 하면 도형이 입력되는 폰트
+fontawesome.com 에서 무료로 사용가능.
+ -->
+
+<!--
+relative 와 absolute를 같이 썼을경우
+부모요소 혹은 조상요소 중에서 relative를 가지고 있고
+그의 자식 요소나 손자 요소가 absolute의 포지션 속성을 가지고 있다면
+해당 absolute의 요소의 기준값은 브라우저가 아니고 relative가 기준값이 된다
+
+부모가 fix인 경우도 자식의 기준값이 될 수 있다
+-->

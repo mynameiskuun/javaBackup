@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>미디어쿼리 반응형 웹</title>
+    <style>
+      #wrapper {
+        width: 480px;
+        height: 600px;
+        background: yellow;
+        margin: 0 auto;
+        border: 1px solid black;
+      }
+      @media (min-width: 700px) {
+        #wrapper {
+          background: red;
+          width: 90%;
+        }
+      }
+      @media (min-width: 1000px) {
+        #wrapper {
+          background: orange;
+          width: 100%;
+        }
+      }
+      /* max-width : ~ 이하가 되었을때 */
+    </style>
+  </head>
+  <body>
+    <div id="wrapper"></div>
+  </body>
+</html>
+
+<!-- 미디어쿼리 사용법
+@media (조건절) {
+  선택자 {
+    변경값
+  }
+} -->

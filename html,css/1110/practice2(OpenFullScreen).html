@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenFullScreen</title>
+  </head>
+  <body>
+    <button onclick="openFullScreen()">비디오가 전체창이 됩니다</button>
+    <p>ESC키를 누르면 빠져 나옵니다</p>
+
+    <video src="Beach.mp4" controls id="myVideo"></video>
+    <script>
+      let elem = document.getElementById("myVideo");
+      function openFullScreen() {
+        if (elem.requestFullscreen) {
+          elem.requestFullscreen();
+        } else if (elem.webkitRequestFullScreen) {
+          elem.webkitRequestFullScreen();
+        } else if (elem.msRequestFullscreen) {
+          elem.msRequestFullscreen();
+        }
+      }
+    </script>
+  </body>
+</html>

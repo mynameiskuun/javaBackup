@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .change {
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Read more</h1>
+    <div id="textbox">
+      <p id="contents"></p>
+    </div>
+    <input type="button" id="btn" value="read less" onclick="readmore()" />
+    <script>
+      function readmore() {
+        if (btn.value == "read less") {
+          btn.value = "read more";
+          document.getElementById("contents").innerHTML =
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis consequatur culpa, id ducimus alias numquam qui quis modi repellat nihil, obcaecati dolorem perspiciatis quae quaerat recusandae non eaque";
+        } else {
+          btn.value = "read less";
+          document.getElementById("contents").innerHTML =
+            "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis consequatur culpa, ...";
+        }
+      }
+    </script>
+  </body>
+</html>

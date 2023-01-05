@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>id 선택자 사용법</title>
+    <style>
+      #wrapper {
+        width: 1200px;
+        height: 100vh;
+        margin: 0 auto;
+        border: 1px solid black;
+        /* background: url(iu.jpg) no-repeat; */
+        /* contain과 cover의 차이점 알아보기*/
+        /* background-repeat : no-repeat; background에 작성가능. */
+      }
+
+      a:link {
+        width: 50px;
+        height: 30px;
+        border: 2px solid red;
+
+        /* inline은 width, height를 가지지 못한다 */
+        padding: 10px;
+        /* 바깥의 여백은 margin, 안쪽의 여백은 padding */
+        display: inline-block;
+        margin: 15px;
+        /* margin, padding 모두 인자 4개 입력시 top부터 시계방향으로 적용됨 */
+        text-decoration: none;
+        color: black;
+      }
+
+      a:visited {
+        color: orange;
+        /* 일단 한번 이상 방문 했던 링크부분 */
+      }
+
+      a:hover {
+        text-decoration: underline;
+        /* 마우스를 오버 했을때 반응 */
+      }
+
+      a:active {
+        color: red;
+        /* 링크를 클릭하는 순간 */
+      }
+      /* link, visited, hover, active 순서로 작성하지 않으면 작동하지 않음. */
+    </style>
+  </head>
+  <body>
+    <!-- div태그. 레이아웃 짤때 가장 많이 사용하는 태그 -->
+    <div id="wrapper">
+      <a href="#">링크1</a>
+    </div>
+    <!-- wrapper는 웹 페이지를 만들 때 한번만 사용하기 때문에 클래스가 아닌 id 사용 -->
+  </body>
+</html>
+
+<!-- 
+감싸는 용도로 id 혹은 클래스 작성 시 wrap, wrapper, container 3가지 주로 많이 사용함
+ -->
+
+<!-- D
+DISPLAY
+
+1. inline
+2. block
+3. inline-block -> block의 특징을 가지지만, 한 라인에 표시되게 함
+4. flex
+  -->

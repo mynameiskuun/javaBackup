@@ -8,22 +8,26 @@
     <link rel="stylesheet" href="style1.css" />
   </head>
   <body>
-    <header>
-      <div class="left-slide-container">
-        <div class="close-btn-box">
-          <a href=""><img src="close.png" class="slide-close-btn" alt=""></a>
-        </div>
-        <ul>
-          <li>A</li>
-          <li>B</li>
-          <li>C</li>
-        </ul>
+    <div id="left-slide-container">
+      <div class="close-btn-box">
+        <img
+          src="close.png"
+          class="slide-close-btn"
+          onclick="closeNav()"
+          alt=""
+        />
       </div>
+      <h1><a href="">메뉴</a></h1>
+      <a href="">A</a>
+      <a href="">B</a>
+      <a href="">C</a>
+    </div>
+    <header>
       <div class="container">
         <div class="upper-header-white">
           <div class="header-left-box">
-            <a href=""><img src="menu1.png" class="left-slide" alt=""></a>
-              <img src="goupang.jpg" class="logo" alt="" />
+            <img src="menu1.png" class="left-slide-btn" onclick="openNav()" />
+            <img src="goupang.jpg" class="logo" alt="" />
           </div>
           <div class="header-middle-box">
             <form action="">
@@ -42,7 +46,9 @@
           <div class="header-right-box">
             <ul class="menu-bar">
               <li>
-                <a href="#"><img src="account.png" alt="" class="account-img"/></a>
+                <a href="#"
+                  ><img src="account.png" alt="" class="account-img"
+                /></a>
                 <div class="detail-box">
                   <ul class="drop-menu-1">
                     <a href="myPage.jsp"><li>회원 정보</li></a>
@@ -63,7 +69,7 @@
                 <div class="detail-box2">
                   <ul class="drop-menu-2">
                     <a href="login.jsp"><li>로그인</li></a>
-                    <a href="register.jsp"><li>회원가입</li></a>          
+                    <a href="register.jsp"><li>회원가입</li></a>
                   </ul>
                 </div>
               </li>
@@ -75,5 +81,20 @@
         </div>
       </div>
     </header>
+
+    <script>
+      function openNav() {
+        document.getElementById("left-slide-container").style.width = "350px";
+        document.querySelector("header").style.backgroundColor =
+          "rgb(245, 245, 245)";
+        // document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("left-slide-container").style.width = "0px";
+        document.querySelector("header").style.backgroundColor = "white";
+        // document.getElementById("main").style.marginLeft = "0";
+      }
+    </script>
   </body>
 </html>

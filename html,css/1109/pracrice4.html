@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 3000px;
+      }
+      #wrapper {
+      }
+      header {
+        height: 100px;
+        width: 100%;
+        background: gray;
+        position: fixed;
+        float: left;
+        transition: 0.5s;
+      }
+      #leftbox {
+        position: absolute;
+        padding-top: 30px;
+        font-size: 20px;
+        left: 30px;
+      }
+      #rightbox {
+        position: absolute;
+        right: 30px;
+        padding-top: 30px;
+        font-size: 20px;
+      }
+      #leftbox a {
+        text-decoration: none;
+        color: black;
+        transition: 0.5s;
+      }
+      #rightbox a {
+        text-decoration: none;
+        color: black;
+        transition: 0.5s;
+        margin: 0;
+        padding: 0;
+      }
+      #rightbox .r1 {
+        background: rgb(236, 246, 247);
+      }
+      #contents {
+        position: absolute;
+        padding-top: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header id="header">
+        <div id="leftbox">
+          <a href="#">COMPANYLOGO</a>
+        </div>
+        <div id="rightbox">
+          <a href="#" class="r1" style="border-radius: 10px">Home</a>
+          <a href="#">Contact</a>
+          <a href="#">About</a>
+        </div>
+      </header>
+      <div id="contents">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id repudiandae
+        et officia blanditiis voluptatibus rerum, quasi consequuntur tempore
+        ipsum cupiditate aut vero, possimus neque minima nemo odit dolore, est
+        velit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
+        a aut quaerat nulla perspiciatis voluptate illum animi recusandae
+        incidunt. Animi, architecto ullam in delectus hic fugit veniam repellat
+        maiores incidunt!laboru Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Corporis impedit fugit debitis fugiat ratione expedita
+        officiis ad vero earum asperiores! Facere laudantium sit eligendi
+        temporibus exercitationem tempora voluptatum voluptas rerum.
+      </div>
+    </div>
+    <script>
+      window.onscroll = function () {
+        smallHeader();
+      };
+      function smallHeader() {
+        if (
+          document.body.scrollTop > 80 ||
+          document.documentElement.scrollTop > 80
+        ) {
+          document.getElementById("header").style.paddingTop = "0px";
+          document.getElementById("leftbox").style.fontSize = "10px";
+          document.getElementById("rightbox").style.fontSize = "10px";
+          document.getElementById("contents").style.top = "160px";
+        } else {
+          document.getElementById("header").style.paddingTop = "60px";
+          document.getElementById("leftbox").style.fontSize = "20px";
+          document.getElementById("rightbox").style.fontSize = "20px";
+          document.getElementById("contents").style.top = "120px";
+        }
+      }
+    </script>
+  </body>
+</html>
+
+<!--  
+    offset().top 절대 위치값
+    브라우저 맨 위부터의 절대값.
+    position().top 상대 위치값
+    relative요소에 대해서 상대적인 위치값.
+ -->

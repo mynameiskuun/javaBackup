@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let menu = ["짜장면", "돈까스", "된장국", "김치찌개", "회덮밥"];
+
+      let menuNum = Math.floor(Math.random() * menu.length);
+      let result = menu[menuNum];
+      document.write(result);
+
+      document.write(Math.floor(Math.random() * 5) + "<br>");
+      /* document.write(Math.random() * 5); */
+
+      let phoneNum = "010-4421-2367";
+      let result_1 = phoneNum.substring(phoneNum.length - 4, 0);
+      document.write(result_1, "**** <br>");
+    </script>
+  </head>
+  <body></body>
+</html>

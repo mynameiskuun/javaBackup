@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>가상요소</title>
+    <style>
+      body {
+        margin: 20px;
+        padding: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        background: #555;
+      }
+      .nav {
+        width: 700px;
+        position: relative;
+        margin: 50px 0;
+        overflow: hidden;
+        /* 보이지 않게 하는 속성 */
+        text-align: center;
+        border: 1px solid red;
+      }
+      .nav a {
+        display: block;
+        position: relative;
+        float: left;
+        width: 20%;
+        padding: 16px 0 38px;
+        text-decoration: none;
+        color: white;
+        transition: 0.6s;
+      }
+
+      .nav a:hover {
+        color: #8ac007;
+      }
+      .nav .effect {
+        position: absolute;
+        left: -15%;
+        transition: 0.6s;
+        bottom: 15px;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        background: #8ac007;
+        margin-left: -6px;
+      }
+      .nav:after {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 20px;
+        width: 100%;
+        height: 1px;
+        background: #8ac007;
+      }
+      .nav a:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: 18px;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: #8ac007;
+        margin-left: -2px;
+      }
+      /* 가상요소 만들때 중요한 요소 content:"", display : block*/
+      /* 가상요소 nav:after의 속성인 absolute의 기준은 nav가 됨. */
+      .nav a:nth-child(1):hover ~ .effect {
+        left: 10%;
+      }
+      .nav a:nth-child(2):hover ~ .effect {
+        left: 30%;
+      }
+      .nav a:nth-child(3):hover ~ .effect {
+        left: 50%;
+      }
+      .nav a:nth-child(4):hover ~ .effect {
+        left: 70%;
+      }
+      .nav a:nth-child(5):hover ~ .effect {
+        left: 90%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav">
+      <a href="#">HTML</a>
+      <a href="#">CSS</a>
+      <a href="#">JAVASCRIPT</a>
+      <a href="#">jQuery</a>
+      <a href="#">React</a>
+      <div class="effect"></div>
+    </div>
+  </body>
+</html>

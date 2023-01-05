@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>clock the radio button to toggle between password visibility.</p>
+    <span>Password :</span> <input type="password" id="pbox" /><br /><br />
+
+    <input type="checkbox" onclick="Myfunction()" /><span>Show Password</span>
+  </body>
+  <script>
+    let a = document.getElementById("pbox");
+
+    function Myfunction() {
+      if (a.type == "text") {
+        // 패스워드형 반환
+        a.type = "password";
+      } else {
+        a.type = "text";
+        // 텍스트 반환
+      }
+    }
+  </script>
+</html>
+<!-- 
+    text
+    password
+    문자열일때 숫자형으로
+    숫자형일때 문자형으로
+ -->
+
+<!-- 
+    요소 드래그 하고 ctrl+d 하면 중복되는 값 한번에 수정 가능
+  -->

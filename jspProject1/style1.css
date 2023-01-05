@@ -1,17 +1,33 @@
-
-.left-slide-container {
-  position: absolute;
-  background: deepskyblue;
-  height: 1000px;
-  width: 250px;
-  left: -250px;
+body {
+  margin: 0;
+  font-family: "Lato", sans-serif;
 }
 
-.left-slide-container ul li {
+#left-slide-container {
+  position: fixed;
+  background: white;
+  height: 100%;
+  width: 0px;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+#left-slide-container a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  display: block;
+  color: black;
   line-height: 100px;
   height: 100px;
 }
 
+#left-slide-container h1 {
+  margin: 0;
+}
+
+#left-slide-container a:hover {
+  background: rgb(116, 116, 116);
+}
 .close-btn-box {
   position: absolute;
   right: 20px;
@@ -24,9 +40,12 @@
   width: 30px;
 }
 
+.slide-close-btn:hover {
+  cursor: pointer;
+}
+
 .container {
   height: 200px;
-  
 }
 .upper-header-white {
   display: flex;
@@ -39,17 +58,17 @@
 .header-left-box {
   display: flex;
 }
-.left-slide {
-  height: 50px;
+
+.left-slide-btn {
+  height: 40px;
   margin-top: 30px;
 }
-
-.left-slide.active .left-slide-container{
-left : 500px;
+.left-slide-btn:hover {
+  cursor: pointer;
 }
-
 .logo {
   height: 110px;
+  width: 200px;
 }
 
 .header-middle-box {
@@ -75,17 +94,17 @@ left : 500px;
 }
 
 .detail-box {
-  display:none;
+  display: none;
   position: absolute;
   width: 200px;
   left: -30px;
 }
 
 .detail-box2 {
-  display:none;
+  display: none;
   position: absolute;
   width: 200px;
-  left: -35px;
+  left: -27px;
 }
 
 .menu-bar li {
@@ -95,53 +114,51 @@ left : 500px;
 .menu-bar .drop2 {
   position: relative;
 }
-.menu-bar li:hover .detail-box{
+.menu-bar li:hover .detail-box {
   display: block;
 }
 
 .menu-bar .drop2:hover .detail-box2 {
   display: block;
 }
-.drop-menu-1 {
-  
-}
-
-.drop-menu-2 {
-  
-}
 
 li {
   list-style: none;
 }
 
-img {
-}
 .account-img {
+  margin-left: 10px;
   height: 55px;
 }
 
 .detail-box:hover .drop-menu-1 {
   display: block;
 }
-
+.drop-menu-1 li {
+  height: 50px;
+}
+.drop-menu-2 li {
+  height: 50px;
+}
 .home-img {
-  padding-top: 4px;
+  margin-left: 10px;
+  padding-top: 7px;
   height: 40px;
 }
 .home-img:hover {
-  color:white;
+  color: white;
 }
 .cart-img {
-  height: 42px;
-  padding-top: 3px;
+  margin-left: 10px;
+  height: 41px;
+  padding-top: 7px;
 }
 .menu-img {
-  padding-top: 3px;
-  height: 47px;
+  margin-left: 10px;
+  padding-top: 0px;
+  height: 55px;
 }
-.menu-img:hover ~.drop-menu-2 {
-  display: block;
-}
+
 .menu-bar {
   display: flex;
 }

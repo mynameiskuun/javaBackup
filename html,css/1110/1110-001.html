@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>어코디언 메뉴</title>
+
+    <style>
+      .accordion {
+        background-color: #eee;
+        color: #444;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+      }
+
+      .active,
+      .accordion:hover {
+        background-color: #ccc;
+      }
+
+      .panel {
+        padding: 0 18px;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Accordion</h1>
+
+    <button class="accordion">Section 1</button>
+    <div class="panel">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur,
+        illum velit sit modi nobis minima vitae unde facilis quia, reiciendis
+        sunt maxime, commodi architecto! In itaque distinctio blanditiis sequi
+        ducimus.
+      </p>
+    </div>
+    <button class="accordion">Section 2</button>
+    <div class="panel">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur,
+        illum velit sit modi nobis minima vitae unde facilis quia, reiciendis
+        sunt maxime, commodi architecto! In itaque distinctio blanditiis sequi
+        ducimus.
+      </p>
+    </div>
+    <button class="accordion">Section 3</button>
+    <div class="panel">
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur,
+        illum velit sit modi nobis minima vitae unde facilis quia, reiciendis
+        sunt maxime, commodi architecto! In itaque distinctio blanditiis sequi
+        ducimus.
+      </p>
+    </div>
+    <script>
+      let acc = document.getElementsByClassName("accordion");
+
+      for (let i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          let panel = this.nextElementSibling;
+          if (panel.style.display == "block") {
+            panel.style.display = "none";
+          } else {
+            panel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
+<!-- 
+toggle 이란.
+원래 더플코트등에 달린 길다란 막대모양 단추를 말함.
+이와 비슷한 모양의 구형 on/off 스위치를 토글 스위치라고 불렀음.
+거기에서 2-state간 상태를 전환하는 기능을 toggle이라고 하게 되었음.
+ -->
+
+<!-- 
+  1. getElementsByClassName
+  2. getElementByIdName
+
+  1번은 해당 classname을 지닌 모든 태그를 한번에 "드래그" 하듯이 끌어 모으는 기능.
+  보통 모든 해당 태그에 어떠한 설정값을 주거나, 함수를 적용시키고자 할 때 사용됨.
+  2번은 해당 id를 지닌 태그를 "호출" 하는것.
+  -->

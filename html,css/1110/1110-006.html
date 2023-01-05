@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      #galleryZone {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="galleryZone">
+      <p>
+        <img src="images/img_1.jpg" alt="1번 이미지" id="photo" />
+      </p>
+      <p>
+        <button onclick="gallery(0)">이전</button>
+        <button onclick="gallery(1)">다음</button>
+      </p>
+    </div>
+    <script>
+      /*       let num = 1;
+      function gallery(props) {
+        if (props) {
+          if (num == 5) return (num = 100);
+          console.log(num);
+          num++;
+        } else {
+          if (num == 1) return;
+          num--;
+        }
+        console.log(num);
+
+        let imgTag = document.getElementById("photo");
+        imgTag.setAttribute("src", "images/img_" + num + ".jpg");
+      }
+     */
+
+      let str = "welcome to korea";
+      document.write(str.indexOf("korea"));
+    </script>
+  </body>
+</html>
+<!-- if return문 복습하기 -->
+<!-- white-space : free-wrap -->
+<!-- https://think9.github.io/2019-10-04-rouge/ -->
+
+<!-- 
+    문자열 객체 : String 객체
+    
+    
+ -->

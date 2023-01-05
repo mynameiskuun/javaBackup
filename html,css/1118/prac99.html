@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ko</title>
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+      #wrapper {
+        margin: 0 auto;
+        height: 12000px;
+      }
+      #container {
+        width: 1400px;
+        height: 800px;
+        overflow: hidden;
+        background-color: #bbdaff;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      #container > div {
+        margin: 50px 20px;
+        padding: 10px;
+        float: left;
+        width: 300px;
+        height: 300px;
+        font-size: 14px;
+        border: 1px solid #000;
+        opacity: 0;
+        box-sizing: border-box;
+        transform: translateY(100px);
+        transition: all 0.4s;
+      }
+      #container.active > div {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      #container .type1 {
+        transition-delay: 0;
+      }
+      #container .type2 {
+        transition-delay: 0.5s;
+      }
+      #container .type3 {
+        transition-delay: 1s;
+      }
+      #container .type4 {
+        transition-delay: 1.5s;
+      }
+      #container .type5 {
+        transition-delay: 2s;
+      }
+      #container .type6 {
+        transition-delay: 2.5s;
+      }
+      #container .type7 {
+        transition-delay: 3s;
+      }
+      #container .type8 {
+        transition-delay: 3.5s;
+      }
+      .container {
+        display: flex;
+      }
+      .container div {
+        width: 300px;
+        height: 300px;
+        border: 1px black solid;
+      }
+      .imgbox:hover {
+        background: rgba(254, 110, 178, 0.35);
+        transition: 0.7s;
+      }
+      .imgbox img {
+        width: 100%;
+        height: 200px;
+        margin: 0;
+        padding: 0;
+        background: #254c93;
+        opacity: 0.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="container">
+        <div class="type1">
+          <div class="imgbox">
+            <a href="http://dolivago.com/" target="_blank"
+              ><img src="logo.png" alt="dolivago" id="img1"
+            /></a>
+          </div>
+          <div class="details">우회결제 / 환율</div>
+        </div>
+        <div class="type2">
+          <div class="imgbox">
+            <a href="#" target="_blank"
+              ><img src="1.jfif" alt="dolivago" id="img1"
+            /></a>
+          </div>
+          <div class="details">콘텐츠 구독</div>
+        </div>
+        <div class="type3">
+          <div class="imgbox">
+            <a href="#" target="_blank"
+              ><img src="2.jfif" alt="dolivago" id="img1"
+            /></a>
+          </div>
+          <div class="details">커뮤니티</div>
+        </div>
+        <div class="type4">
+          <div class="imgbox">
+            <a href="#" target="_blank"
+              ><img src="3.jfif" alt="dolivago" id="img1"
+            /></a>
+          </div>
+          <div class="details">우회결제 / 환율</div>
+        </div>
+        <div class="type5">
+          <div class="imgbox">
+            <a href="#" target="_blank"
+              ><img src="4.jfif" alt="dolivago" id="img1"
+            /></a>
+          </div>
+          <div class="details">우회결제 / 환율</div>
+        </div>
+        <div class="type6">
+          <div class="imgbox">
+            <a href="#" target="_blank"
+              ><img src="5.jfif" alt="dolivago" id="img1"
+            /></a>
+          </div>
+          <div class="details">우회결제 / 환율</div>
+        </div>
+        <div class="type7">
+          <div class="imgbox">
+            <a href="#" target="_blank"
+              ><img src="6.jfif" alt="dolivago" id="img1"
+            /></a>
+          </div>
+          <div class="details">우회결제 / 환율</div>
+        </div>
+        <div class="type8">
+          <div class="imgbox">
+            <a href="#" target="_blank"
+              ><img src="7.jfif" alt="dolivago" id="img1"
+            /></a>
+          </div>
+          <div class="details">우회결제 / 환율</div>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(function () {
+        let t = 0;
+
+        setTimeout(function () {
+          $("body,html").animate({ scrollTop: "0px" }, 50, function () {
+            $("#container").addClass("active");
+            // 제이쿼리 스크롤 이벤트
+
+            $(window).scroll(function () {
+              t = $(window).scrollTop();
+
+              if (t < $("#header").offset().top) {
+                $("container").addClass("active");
+              } else if (t < $("#page1").offset().top) {
+                $("#page1").addClass("active");
+              } else if (t < $("body, html").offset().top) {
+                $("#page2").addClass("active");
+              }
+            });
+          });
+        }, 50);
+      });
+    </script>
+  </body>
+</html>

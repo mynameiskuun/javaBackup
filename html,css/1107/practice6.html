@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .content {
+        width: 800px;
+        height: 200px;
+        background: red;
+      }
+      ol {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: relative;
+      }
+      .a {
+        display: inline-block;
+        position: relative;
+        width: 19%;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        padding-top: 50px;
+      }
+      .line {
+        border: 1px yellow solid;
+        position: absolute;
+        width: 100%;
+        top: 150px;
+      }
+      .a .ball {
+        display: inline-block;
+        position: absolute;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        background: yellow;
+        left: 50%;
+        top: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div class="content">
+        <ol>
+          <li class="a">HTML</li>
+          <li class="a">CSS</li>
+          <li class="a">JAVASCRIPT</li>
+          <li class="a">jQuery</li>
+          <li class="a">REACT</li>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="ball"></div>
+          <div class="line"></div>
+        </ol>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>a</title>
+    <style>
+      #wrapper {
+        width: 800px;
+        height: 100vh;
+        border: 2px solid black;
+        margin: 0 auto;
+        /* 0 10px 0 = 0 10px 0 10px 와 같음 */
+        /* 0 auto는 0 auto 0 auto 의 약자. 위아래 0, 좌우 auto로 인해 중앙정렬이 됨 */
+
+        /* 
+        -webkit-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -o-border-radius: 50px; 
+        위의 접두사를 적어주면 모던 브라우저에서도 css 적용 가능 
+        */
+
+        border-radius: 50px;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      p {
+        width: 100px;
+        height: 100px;
+        padding: 20px;
+        border: 8px;
+        margin: 0 auto;
+        background: #ccc;
+        box-sizing: border-box;
+        /* padding border width안에 다 들어가게됨 */
+        /* box-sizing border-box 쓰는 순간 width는 100px로 종결됨 */
+      }
+
+      /*   p:before {
+        content: "";
+        display: block;
+        background: orange;
+        width: 100px;
+        height: 30px;
+        border: 2px solid black;
+      }
+
+      p:after {
+        content: "";
+        display: block;
+        background: red;
+        color: white;
+        width: 100px;
+        height: 30px;
+        border: 2px solid black;
+      }
+ */
+      ul li:nth-child(2n) {
+        color: red;
+      }
+      /* 인자값 odd, 2n+1 : 홀수 / even, 2n : 짝수 */
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <a href="#">링크1</a>
+      <p>오늘</p>
+    </div>
+
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+      <li>11</li>
+      <li>12</li>
+    </ul>
+  </body>
+</html>
+
+<!-- 
+1. 크롬
+2. 사파리
+3. 파이어폭스
+4. 오페라 (유럽형 브라우저)
+
+-webkit- 크롬 사파리
+-o- 오페라
+-moz- 파이어폭스
+
+브라우저 접두사, 벤더 프리픽스, 프리픽스
+
+1. 최신모던브라우저
+2. 모던브라우저 (업데이트가 중지된 브라우저. ex. 아이패드 1세대)
+3. 구형브라우저 (익스플로러)
+
+ -->

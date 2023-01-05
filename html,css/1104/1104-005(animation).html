@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>그래디언트</title>
+
+    <style>
+      #box {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        width: 50px;
+        height: 50px;
+        background: red;
+        animation-name: NSK;
+        animation-duration: 2s;
+        animation-iteration-count: infinite; /* 횟수 입력가능  */
+        animation-direction: normal; /* alternate 반대로 회전 */
+        animation-timing-function: cubic-bezier(
+          0,
+          2,
+          0.66,
+          -1.02
+        ); /* linear : 일정한 속도로 */
+      }
+      @keyframes NSK {
+        0%/* from으로 대체 가능 */ {
+          position: absolute;
+          top: 50px;
+          left: 50px;
+        }
+
+        25% {
+          position: absolute;
+          top: 50px;
+          left: 500px;
+        }
+
+        50% {
+          position: absolute;
+          top: 500px;
+          left: 500px;
+        }
+
+        75% {
+          position: absolute;
+          top: 500px;
+          left: 50px;
+        }
+
+        100%/* to로 대체 가능 */ {
+          position: absolute;
+          top: 50px;
+          left: 50px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box"></div>
+  </body>
+</html>
+
+<!-- 
+transform : translate (x,y) x,y 값만큼 옮기기
+transform : skew (60deg) 비틀기
+transform : rotate (720deg) 2회전 돌리기 
+transform : scale (2) 2배 증가시키기
+transform : radial-gradient 
+transform : 
+-->

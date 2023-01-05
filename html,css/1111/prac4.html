@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <style>
+      #page1 {
+        height: 900px;
+        overflow: hidden;
+        background-color: #cafeb8;
+      }
+      #page1 > div {
+        margin: 50px 20px;
+        padding: 10px;
+        float: left;
+        width: 300px;
+        height: 300px;
+        font-size: 14px;
+        border: 1px solid #000;
+        opacity: 0;
+        box-sizing: border-box;
+        transform: translateY(100px);
+        transition: all 0.4s;
+      }
+      #page1.active > div {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      #page1 .type1 {
+        transition-delay: 0;
+      }
+      #page1 .type2 {
+        transition-delay: 0.5s;
+      }
+      #page1 .type3 {
+        transition-delay: 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="warpper">
+      <header id="header">
+        <div class="type1">main animation set1</div>
+        <div class="type2">type2</div>
+      </header>
+      <section id="page1">
+        <div class="type1">main animation set2</div>
+        <div class="type2">type2</div>
+      </section>
+      <section id="page2">
+        <div class="type1">main animation set3</div>
+        <div class="type2">type2</div>
+      </section>
+      <section id="page3">
+        <div class="type1">main animation set4</div>
+        <div class="type2">type2</div>
+      </section>
+      <section id="page4">
+        <div class="type1">main animation set5</div>
+        <div class="type2">type2</div>
+      </section>
+      <section id="page5">
+        <div class="type1">main animation set6</div>
+        <div class="type2">type2</div>
+      </section>
+    </div>
+
+    <script>
+      $(function () {
+        let t = 0;
+
+        setTimeout(function () {
+          $("body,html").animate({ scrollTop: "0px" }, 300, function () {
+            $("#header").addClass("active");
+            // 제이쿼리 스크롤 이벤트
+
+            $(window).scroll(function () {
+              t = $(window).scrollTop();
+
+              if (t < $("#header").offset().top) {
+                $("header").addClass("active");
+              } else if (t < $("#page1").offset().top) {
+                $("#page1").addClass("active");
+              } else if (t < $("#page2").offset().top) {
+                $("#page2").addClass("active");
+              } else if (t < $("#page3").offset().top) {
+                $("#page2").addClass("active");
+              } else if (t < $("#page4").offset().top) {
+                $("#page2").addClass("active");
+              } else if (t < $("#page5").offset().top) {
+                $("#page2").addClass("active");
+              }$(header).ready(function(){
+ 
+});
+            });
+          });
+        }, 300);
+      });
+    </script>
+  </body>
+</html>

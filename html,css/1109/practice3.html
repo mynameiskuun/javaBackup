@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>스크롤 반응에 의한 메뉴 보이기</title>
+    <style>
+      body {
+        margin: 0;
+        background-color: #f1f1f1;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #navbar {
+        background-color: #333;
+        position: fixed;
+        top: -50px;
+        width: 100%;
+        display: block;
+        transition: top 0.3s;
+      }
+
+      #navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 15px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      #navbar a:hover {
+        background-color: #ddd;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <a href="#">Home</a>
+      <a href="#">News</a>
+      <a href="#">Contact</a>
+    </div>
+
+    <div style="padding: 15px 15px 5000px">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+        accusamus, vel in quam ducimus consectetur obcaecati nam tempora earum
+        mollitia atque magnam voluptates optio, omnis error nihil, eveniet enim
+        iusto?
+      </p>
+    </div>
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          document.getElementById("navbar").style.top = "0";
+        } else {
+          document.getElementById("navbar").style.top = "-50px";
+        }
+      }
+    </script>
+  </body>
+</html>
+
+<!-- 
+
+    window.oncroll : 스크롤바가 조금이라도 움직였을때 작동함.
+ -->

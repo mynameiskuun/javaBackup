@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>for문</title>
+    <style>
+      .red {
+        font-size: 15px;
+        color: red;
+      }
+    </style>
+    <script>
+      //   for (var i = 10; i >= 1; i--) {
+      //     document.write("반복문" + i, "<br>");
+      //   }
+
+      for (var i = 1; i <= 100; i++) {
+        if (i % 5 == 0 && i % 7 != 0) {
+          document.write("<p class='red'>" + i + "</p>");
+        }
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

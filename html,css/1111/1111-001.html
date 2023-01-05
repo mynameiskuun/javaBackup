@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #header {
+        position: relative;
+        width: 100%;
+      }
+      #imgbox {
+        position: relative;
+      }
+      #dog {
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        transition: 3s;
+      }
+      .add {
+        position: absolute;
+        right: 0;
+        width: 200px;
+        height: 200px;
+        transition: 3s;
+        transform: rotateX(180deg);
+      }
+      .remove {
+        position: absolute;
+        transition: 3s;
+        width: 200px;
+        height: 200px;
+        left: 0;
+        transform: rotateX("180deg");
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header id="header">
+        <h2>basic :: jQuery example</h2>
+        <input type="button" value="add" onclick="addFunction()" />
+        <input type="button" value="remove" onclick="removeFunction()" /><br />
+        <div id="imgbox">
+          <img src="1.jpg" alt="dog" id="dog" />
+        </div>
+      </header>
+      <article></article>
+    </div>
+    <script>
+      let a = document.getElementById("imgbox");
+
+      function addFunction() {
+        a.classList.toggle("add");
+      }
+      function removeFunction() {
+        a.classList.toggle("remove");
+      }
+    </script>
+  </body>
+</html>
+<!-- 
+    element.classlist.toggle(classname)
+    주말에 공부할것
+    getelementbyid
+    queryselector
+    queryselectorall
+    nodelist, 배열의 차이점
+    dom의 개념  
+    addEventListener
+    전역변수
+    지역변수
+    
+ -->

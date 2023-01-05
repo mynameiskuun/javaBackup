@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>s</title>
+    <style>
+      .dog {
+        width: 300px;
+        height: 200px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      .detail {
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 200px;
+        background: rgba(0, 0, 0, 0.5);
+        opacity: 0.5;
+        display: none;
+        position: absolute;
+      }
+      h1 {
+        margin: 0;
+      }
+      li {
+        display: inline-block;
+        position: relative;
+      }
+      .dog:hover .detail {
+        transition: 0.3s;
+        transform: translateY(-200px);
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <ul>
+        <li>
+          <img class="dog" src="1.jpg" alt="" />
+          <div class="detail">
+            <h1>상품1</h1>
+            <p>상품설명</p>
+            <p>가격 : 12,345원</p>
+          </div>
+        </li>
+        <li>
+          <img class="dog" src="1.jpg" alt="" />
+          <div class="detail">
+            <h1>상품1</h1>
+            <p>상품설명</p>
+            <p>가격 : 12,345원</p>
+          </div>
+        </li>
+        <li>
+          <img class="dog" src="1.jpg" alt="" />
+          <div class="detail">
+            <h1>상품1</h1>
+            <p>상품설명</p>
+            <p>가격 : 12,345원</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

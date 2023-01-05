@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // const mode = document.getElementById("jsmode");
+      // mode.addEventListener("click", function () {
+      //   if (mode.innerText === "바뀌기 전 text") {
+      //     mode.innerText = "바뀐 text!";
+      //   } else {
+      //     mode.innerText = "바뀌기 전 text";
+      //   }
+      // });
+
+      const mode = document.querySelector("jsmode");
+      mode.addEventListener("click", function () {
+        if (mode.innerText === "바뀌기 전 text") {
+          mode.innerText = "바뀐 text!";
+        } else {
+          mode.innerText = "바뀌기 전 text";
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <button
+      onclick="(
+     function(){
+        var test = document.getElementById('jsmode');
+        if(test.innerText === '바뀌기 전 text') {
+          test.innerText = '바뀐 text!';
+  }       else {
+       test.innerText = '바뀌기 전 text';
+       }
+       })()"
+      id="jsmode"
+    >
+      바뀌기 전 text
+    </button>
+  </body>
+</html>
